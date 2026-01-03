@@ -1,0 +1,32 @@
+:root {
+  --color-bg-dark: #121212;
+  --color-bg-panel: #1e1e1e;
+  --color-text-primary: #e0e0e0;
+  --color-accent: #d35400; /* Orange */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  border: 1px solid #333;
+  padding: 40px;
+  background-color: var(--color-bg-panel);
+  border-radius: 8px;
+}
+
+h1 {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
