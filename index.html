@@ -5,32 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMPACT TLD</title>
     <style>
-      /* --- STYLE TACTIQUE --- */
+      /* --- STYLE TACTIQUE V2 --- */
       body {
-        background-color: #121212; /* Fond Noir */
-        color: #e0e0e0;            /* Texte Gris clair */
+        background-color: #121212;
+        color: #e0e0e0;
         font-family: 'Segoe UI', sans-serif;
         margin: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
+      }
+
+      /* En-tête */
+      header {
+        margin-top: 40px;
+        text-align: center;
+        border-bottom: 2px solid #d35400;
+        padding-bottom: 10px;
+        width: 90%;
+        max-width: 400px;
       }
       h1 {
+        margin: 0;
         color: #d35400; /* Orange Tactique */
+        letter-spacing: 4px;
+        font-size: 28px;
+      }
+      .status {
+        font-size: 12px;
+        color: #2e7d32; /* Vert */
         text-transform: uppercase;
-        letter-spacing: 3px;
-        border-bottom: 2px solid #333;
-        padding-bottom: 10px;
+        margin-top: 5px;
+      }
+
+      /* Grille de Menu */
+      .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+        gap: 15px;
+        margin-top: 40px;
+        width: 90%;
+        max-width: 400px;
+      }
+
+      /* Boutons */
+      .btn-menu {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        color: #e0e0e0;
+        padding: 30px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+        border-radius: 4px;
+      }
+      .btn-menu:hover {
+        border-color: #d35400;
+        color: #d35400;
+        background-color: #252525;
+      }
+      .icon {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <div id="root">
-      <h1>IMPACT TLD</h1>
-      <p>Système prêt.</p>
-    </div>
     
-    <script type="module" src="/src/index.js"></script>
+    <header>
+      <h1>IMPACT</h1>
+      <div class="status">● Système Connecté</div>
+    </header>
+
+    <div class="menu-grid">
+      <div class="btn-menu">
+        <span class="icon">📋</span>
+        Données
+      </div>
+      <div class="btn-menu">
+        <span class="icon">🎯</span>
+        Tir
+      </div>
+      <div class="btn-menu">
+        <span class="icon">☁️</span>
+        Météo
+      </div>
+      <div class="btn-menu">
+        <span class="icon">⚙️</span>
+        Réglages
+      </div>
+    </div>
+
   </body>
 </html>
